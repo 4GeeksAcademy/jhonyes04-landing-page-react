@@ -1,4 +1,27 @@
-import React from 'react';
+import { NavbarLink } from './NavbarLink';
+
+const links = [
+    {
+        url: '#',
+        label: 'Home',
+        activo: 'active',
+    },
+    {
+        url: '#',
+        label: 'About',
+        activo: '',
+    },
+    {
+        url: '#',
+        label: 'Services',
+        activo: '',
+    },
+    {
+        url: '#',
+        label: 'Contact',
+        activo: '',
+    },
+];
 
 export const Navbar = () => {
     return (
@@ -28,26 +51,9 @@ export const Navbar = () => {
                     id="menu"
                 >
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item">
-                            <a href="#" className="nav-link active">
-                                Home
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                About
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                Services
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="#" className="nav-link">
-                                Contact
-                            </a>
-                        </li>
+                        {links.map((link, index) => (
+                            <NavbarLink key={index} link={link} />
+                        ))}
                     </ul>
                 </div>
             </div>

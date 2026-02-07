@@ -9,6 +9,9 @@ const Home = () => {
     return (
         <>
             <Navbar />
+            <Jumbotron />
+            <Cards />
+            <Footer />
         </>
     );
 };

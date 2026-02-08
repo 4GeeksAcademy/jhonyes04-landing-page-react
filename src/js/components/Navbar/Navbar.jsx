@@ -4,22 +4,22 @@ const links = [
     {
         url: '#',
         label: 'Home',
-        activo: 'active',
+        active: true,
     },
     {
         url: '#',
         label: 'About',
-        activo: '',
+        active: false,
     },
     {
         url: '#',
         label: 'Services',
-        activo: '',
+        active: false,
     },
     {
         url: '#',
         label: 'Contact',
-        activo: '',
+        active: false,
     },
 ];
 
